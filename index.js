@@ -24,9 +24,16 @@ function deepestChild() {
 //     });
 // };
 
+// function increaseRankBy(n) {
+//     const ranks = document.querySelectorAll('.ranked-list li');
+//     ranks.forEach(function(node, i, arr) {
+//         node.textContent = parseInt(node.textContent) + n;
+//     });
+// };
+
 function increaseRankBy(n) {
     const ranks = document.querySelectorAll('.ranked-list li');
     for (let i = 0; i < ranks.length; i++) {
-        ranks[i].innerHTML = parseInt(ranks[i].innerHTML) + n;
+        ranks[i].textContent = parseInt(ranks[i].textContent) + n;
     };
 };
